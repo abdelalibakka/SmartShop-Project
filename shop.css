@@ -9,32 +9,28 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+
 }
 
-/* Header Styles */
 header {
-    background: #333;
-    color: #fff;
-    text-align: left;
-    padding: 0px ;
-    text-shadow: 1px 2px 12px rgb(150, 148, 148);
-    
+    position: relative;
 }
 
-header h1 {
-    font-size: 2.5rem;
+header img {
+    position: absolute;
+    top: -60px; /* Adjust this value to set the distance from the top */
+    left: 10px; /* Adjust this value to set the distance from the left */
+    height: 200px; /* Adjust this value to set the height of the logo */
+    width: auto; /* Maintain aspect ratio */
 }
 
-header p {
-    font-size: 1.2rem;
-}
 
 /* Navigation Styles */
 nav {
-    background:#333;
+    
     color: #fff;
     text-align: right;
-    padding: 0px 0;
+    padding: 20px ;
     
 }
 
@@ -54,25 +50,77 @@ nav ul li a {
 
 }
 
+*
+{
+    margin:0px;background-color: black;
+
+}
+h2
+{   
+    display: block;
+    width:100%;
+    text-align:center;
+    margin-top: 20px;
+    color:white;
+    font-family:arial,Tahoma;
+}
+.slider
+{
+    width:600px;
+    overflow:hidden;
+    margin:100px auto;
+    border:3px  darkgrey;
+}
+.slider-content
+{
+    width:3000px;
+    position:relative;
+    animation:slider 15s infinite ease-in-out;
+  animation-direction: alternate;
+
+}
+.slider-content img
+{
+    float:left;
+    width:600px;
+    height:300px;
+}
+
+
+
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 3px darkgrey;
+}
+
+.slider-content {
+    width: 100%; /* Set to 100% for full-width */
+    position: relative;
+}
+
+.slider-content img {
+    width: 100%;
+    height: 400px;
+    display: block; /* Remove any potential spacing issues */
+}
+
+
+
 /* Banner Styles */
 .banner {
     text-align: center;
     padding: 50px 20px;
 }
 
-.banner h2 {
-    font-size: 2.5rem;
-}
 
-.banner p {
-    font-size: 1.2rem;
-    margin: 20px 0;
-}
 
 .shop-now-button {
     display: inline-block;
-    background: #333;
-    color: #fff;
+    background: #9dc290;
+    color: rgb(18, 18, 18);
     border: none;
     padding: 10px 20px;
     text-decoration: none;
@@ -80,23 +128,70 @@ nav ul li a {
     cursor: pointer;
 }
 
+
+
 .shop-now-button:hover {
     background: #555;
 }
 
-/* Footer Styles */
-footer {
-    background: #333;
-    color: #fff;
+
+
+
+.featured-products {
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
+}
+
+.product-card {
+    display: inline-block;
+    margin: 20px;
+    text-align: left;
+}
+
+.product-card img {
     width: 100%;
+    max-width: 250px; /* Set a maximum width for consistency */
+    height: auto;
+    border: #9dc290 ;
 }
 
-img {
-    width: 42px;
-    vertical-align: middle;
+.product-card h3 {
+    margin-top: 10px;
+    color: #f7f9f6;
 }
 
+.product-card a {
+    display: block;
+    margin-top: 10px;
+    background-color: rgb(18, 18, 18);
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.product-card p {
+    
+    color: #f7f9f6;
+    max-width: 250px;
+}
+
+.add-to-cart-button  {
+    padding: 10px 20px;
+    background-color: #9dc290;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  
+  .add-to-cart-button2
+{
+    padding: 10px 20px;
+    background-color: #9dc290;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.875rem;
+    cursor: pointer;
+
+
+}
